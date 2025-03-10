@@ -10,9 +10,17 @@ void main(){
 */
 //--------------------ВТОРОЕ ЗАДАНИЕ
  int intValue;
+ double a, b, c, d, e, f, h;
  double mathf(double a, double b, double c, double d, double e, double f, double h);
- double a,b,c,d,e,f,h = scanf("%d", &intValue);
- double res = mathf(7,2,3,7,8,3,4);
+ printf("Введите abcdefh из a/(b*c/(d*e/(f*h))) :\n");
+ scanf("%lf", &a);
+ scanf("%lf", &b);
+ scanf("%lf", &c);
+ scanf("%lf", &d);
+ scanf("%lf", &e);
+ scanf("%lf", &f);
+ scanf("%lf", &h);
+ double res = mathf(a, b, c, d, e, f, h);
  printf("Значение равно %.2f\n", res);
 }
 

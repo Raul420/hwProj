@@ -33,5 +33,25 @@ void main(){
  int c = del10(a, b);
  printf("Последняя цифра равна: %d\n", c);
 */
+//ЧЕТВЕРТОЕ ЗАДАНИЕ
+/* int k;
+ printf("Введите кол-во секунд k:\n");
+ scanf("%d", &k);
+ timehr(k);
+*/
+//Пятое задание
+/* int a,b;
+ printf ("Введите a: \n");
+ scanf("%d", &a);
+ printf("Введите b: \n");
+ scanf("%d", &b);
+ a = a ^ b;
+ b = a ^ b;
+ a = a ^ b; 
+printf("\n   a : %d\n   b : %d\n", a, b);
+*/
+ int k;
+ printf("Введите кол-во секунд k:\n");
+ scanf("%d", &k);
+ timehrplus(k);
 }
-

@@ -9,6 +9,7 @@ void main(){
  printf("x в первом равно %d\n, а во втором равно %d\n", res1, res2);
 */
 //--------------------ВТОРОЕ ЗАДАНИЕ
+/*
  int intValue;
  double a, b, c, d, e, f, h;
  double mathf(double a, double b, double c, double d, double e, double f, double h);
@@ -22,5 +23,15 @@ void main(){
  scanf("%lf", &h);
  double res = mathf(a, b, c, d, e, f, h);
  printf("Значение равно %.2f\n", res);
+*/
+// ТРЕТЬЕ ЗАДАНИЕ
+/*
+ int a, b, del10(a, b) ;
+ printf("Введите два числа первое делимое и делитель: \n"); 
+ scanf("%d", &a);
+ scanf("%d", &b);
+ int c = del10(a, b);
+ printf("Последняя цифра равна: %d\n", c);
+*/
 }
 

@@ -4,3 +4,4 @@ double mathf(double a, double b,double c,double d,double e,double f,double g,dou
 int del10(int a, int b);
 void timehr(int k);
 void timehrplus(int k);
+int bintodec(const char *binary);

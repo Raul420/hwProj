@@ -21,16 +21,26 @@ indent_mode=2
 name=First
 base_path=/home/raf/projects/First//home/raf/hwProj/test/hwProj/First
 description=
+file_patterns=
 
 [long line marker]
 long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=2
-FILE_NAME_0=2366;C;0;EUTF-8;1;1;0;%2Fhome%2Fraf%2Fprojects%2FFirst%2Fhome%2Fraf%2FhwProj%2Ftest%2FhwProj%2FFirst%2Fhw4.c;0;4
-FILE_NAME_1=2236;C;0;EUTF-8;1;1;0;%2Fhome%2Fraf%2FhwProj%2Ftest%2FhwProj%2Fnum3%2Fsrc%2Fmain.c;0;4
-FILE_NAME_2=0;None;0;EUTF-8;1;1;0;%2Fhome%2Fraf%2FРабочий%20стол%2Fdir1%2Fdir12%2Fdir22%2FFile1.txt;0;4
+current_page=-1
 
 [VTE]
 last_dir=/home/raf
+
+[build-menu]
+CFT_00_LB=_Compile
+CFT_00_CM=g++ -Wall -c "%f"
+CFT_00_WD=
+CFT_01_LB=_Build
+CFT_01_CM=g++ -Wall -o "%e" "%f"
+CFT_01_WD=
+CFT_02_LB=_Lint
+CFT_02_CM=cppcheck --language=c --enable=warning,style --template=g++ "%f"
+CFT_02_WD=
+filetypes=C;

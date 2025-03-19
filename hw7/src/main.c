@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <cstdlib>
+#include <string.h>
+#include <stdlib.h>
 
 int main()
-{
 	//Задание 1 (a)
 	//~ int arr[5][7] = {
 		//~ {1,5,6,3,5,2,3},
@@ -80,7 +81,14 @@ int main()
 	//~ }
 	//~ printf("макс число %.2f\n %d\n", tmp, indx);
 //Задание 5
-
-}
+//~ {
+	//~ char *buffer = (char*) malloc(128);
+	//~ char *word = (char*) malloc(128);
+	//~ scanf("%127s", buffer);
+	//~ scanf("%127s", word);
+	//~ int ans = strcmp(word, buffer);
+	//~ printf("ответ: %d\n", ans);
+	//~ free(word);
+//~ }
 
 		

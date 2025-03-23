@@ -28,12 +28,7 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=4
-FILE_NAME_0=2072;C;0;EUTF-8;1;1;0;%2Fhome%2Fraf%2Fprojects%2FFirst%2Fhome%2Fraf%2FhwProj%2Ftest%2FhwProj%2FFirst%2Fmain.c;0;4
-FILE_NAME_1=535;C++;0;EUTF-8;1;1;0;%2Fhome%2Fraf%2Fprojects%2FFirst%2Fhome%2Fraf%2FhwProj%2Ftest%2FhwProj%2FFirst%2Fnew.cpp;0;4
-FILE_NAME_2=846;C++;0;EUTF-8;1;1;0;%2Fhome%2Fraf%2Fprojects%2Fnew1703%2Fmain.cpp;0;4
-FILE_NAME_3=0;C;0;EUTF-8;1;1;0;%2Fhome%2Fraf%2FhwProj%2Ftest%2FhwProj%2Fhw7%2Fsrc%2Ffuncs.c;0;4
-FILE_NAME_4=2101;C;0;EUTF-8;1;1;0;%2Fhome%2Fraf%2FhwProj%2Ftest%2FhwProj%2Fhw7%2Fsrc%2Fmain.c;0;4
+current_page=0
 
 [VTE]
 last_dir=/home/raf

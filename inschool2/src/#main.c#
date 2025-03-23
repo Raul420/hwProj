@@ -1,0 +1,21 @@
+#include <iostream>
+int sqr(const int*);
+int sqr(int*);
+int main()
+{
+	const int n1{2};
+	int n2{3};
+	int sqr_n1{sqr(&n1)};
+	int sqr_n2{sqr(&n2)};
+	std::cout<<"sqr(n1):"<<sqr_n1<<"\tn1:"<<n1<<std::endl;
+	std::cout<<"sqr(n2):"<<sqr_n2<<"\tn2:"<<n2<<std::endl;
+}
+int sqr(const int* num)
+{
+	return *num**num;
+}
+* /\* int sqr(int* num) *\/ */
+* /\* { *\/ */
+* /\* 	*num=*num**num; //изменяем значение по адресу в указателе *\/ */
+	
+* /\* 	returnx.x-21=-0o0o-[3~[3~

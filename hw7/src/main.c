@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <cstdlib>
+// #include <cstdlib>
 #include <string.h>
 #include <stdlib.h>
 
@@ -40,25 +40,27 @@ int main()
 	//~ }
 	//ЗАДАНИЕ 1 C
 	//ЗАДАНИЕ 2
-	//~ int ar[ ]={6,1,-10, 5, 2, -7};
-	//~ int size = (sizeof(ar)/sizeof(ar[0]));
-	//~ int* pnt = ar;
-	//~ for(int i = 0; i < size; i ++) // i - номер прохода
-	//~ {	
-		//~ for(int j = size - 1; j > i   ; j -- )
-		//~ {
-			//~ if ( *(pnt+j-1) > *(pnt+j) ) // “нижний” < “верхний”
-				//~ { // тогда меняем их местами
-					//~ int x = *(pnt+j-1);
-					//~ *(pnt+j-1) = *(pnt+j);
-					//~ *(pnt+j) = x;
-				 //~ }
-		//~ }
-	//~ }
-	//~ for (int i = 0; i < size; ++i)
-	//~ {
-		//~ printf("%d\n", *(pnt+i));
-	//~ }
+{
+	int ar[ ]={6,1,-10, 5, 2, -7};
+	int size = (sizeof(ar)/sizeof(ar[0]));
+	int* pnt = ar;
+	for(int i = 0; i < size; i ++) // i - номер прохода
+	{	
+		for(int j = size - 1; j > i   ; j -- )
+		{
+			if ( *(pnt+j-1) > *(pnt+j) ) // “нижний” < “верхний”
+				{ // тогда меняем их местами
+					int x = *(pnt+j-1);
+					*(pnt+j-1) = *(pnt+j);
+					*(pnt+j) = x;
+				 }
+		}
+	}
+	for (int i = 0; i < size; ++i)
+	{
+		printf("%d\n", *(pnt+i));
+	}
+}
 //ЗАДАНИЕ 2 
 //Задание 3
 	//~ const int x = 10, y = 20;
@@ -68,7 +70,8 @@ int main()
 		//~ array [i] = (int*) malloc (sizeof (int)*y);
 	//~ }
 //Задание 4
-	//~ double tmp, array[30]={1.2,1.6,5.7,8,10};
+//~ {
+		//~ double tmp, array[30]={1.2,1.6,5.7,8,10};
 	//~ tmp = array[0];
 		//~ int indx;
 	//~ for (int i = 0; i<30;i++)
@@ -76,10 +79,11 @@ int main()
 		//~ if (array[i]>tmp)
 		//~ {
 			//~ tmp = array[i];
-			//~ indx = i;
+			//~ indx = i+1;
 		//~ }
 	//~ }
 	//~ printf("макс число %.2f\n %d\n", tmp, indx);
+//~ }
 //Задание 5
 //~ {
 	//~ char *buffer = (char*) malloc(128);

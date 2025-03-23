@@ -6,28 +6,33 @@ int main()
 //============считываю массив==============================
 	char* filename = "files/data.txt";
 	FILE* fp = fopen(filename,"r");
-	FILE* fpw = fopen(filename,"w");
-	char *readarray=(char*)malloc(256*sizeof(char));
+	FILE* fpw = fopen(filename,"a");
+	char readarray[256];
 	if (fp)
 	{
-		while (fgets(readarray, 256, fp)!=NULL)
+		while (fgets(readarray, 100, fp)!=NULL)
 			{
 				printf("%s", readarray);
 			}
 	}
-	for (int i = 0; i < 20; i++) 
-	{
-		if (readarray[i])
-			{printf("%c\n",readarray[i]);}
-	}
-//==================сортирую массив=====================
+	fclose(fp);
+	//~ for (int i = 0; i < 20; i++) 
+	//~ {
+		//~ if (readarray[i])
+			//~ {printf("%c\n",readarray[i]);}
+	//~ }
+//~ //==================сортирую массив=====================
 	int size = (sizeof(readarray)/sizeof(readarray[0]));
-	int* pnt = readarray;
+	char* pnt = readarray;
+		for (int i = 0; i < size; ++i)
+	{
+		printf("%c", *(pnt+i));
+	}
 	for(int i = 0; i < size; i ++) // i - номер прохода
 	{	
 		for(int j = size - 1; j > i   ; j -- )
 		{
-			if ( *(pnt+j-1) > *(pnt+j) ) // “нижний” < “верхний”
+			if ( *(pnt+j-1) < *(pnt+j) ) // “нижний” < “верхний”
 				{ // тогда меняем их местами
 					int x = *(pnt+j-1);
 					*(pnt+j-1) = *(pnt+j);
@@ -35,9 +40,10 @@ int main()
 				 }
 		}
 	}
+	printf("size = %d", size);
 	for (int i = 0; i < size; ++i)
 	{
-		printf("%d\n", *(pnt+i));
+		printf("%c", *(pnt+i));
 	}
 	
 	
@@ -46,15 +52,14 @@ int main()
 	//~ filewrite(fp);
 //================записываю массив=================//
 	//~ fileread(fp, readarray);
-	if(fpw)
-	{
-		char* message = "123445678678678476";
-		fputs(message,fpw);
-		fclose(fpw);
-		printf("File has been written\n");
-	}
+	//~ if(fpw)
+	//~ {
+		//~ char* message = "123445678678678476";
+		//~ fputs(message,fpw);
+		//~ fclose(fpw);
+		//~ printf("\n=====File has been written=====\n");
+	//~ }
 //================записываю массив=================//
-	free(readarray);
 	//---------------------------------------------
 	//~ int q[5] = {5,4,2,3,4};
 	//~ int qq[2][5] = {{1,2,3,4,5},{0,9,8,7,6}};

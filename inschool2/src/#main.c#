@@ -1,5 +1,5 @@
 #include <iostream>
-int sqr(const int*);
+/*int sqr(const int*);
 int sqr(int*);
 int main()
 {
@@ -14,8 +14,32 @@ int sqr(const int* num)
 {
 	return *num**num;
 }
-* /\* int sqr(int* num) *\/ */
-* /\* { *\/ */
-* /\* 	*num=*num**num; //изменяем значение по адресу в указателе *\/ */
+int sqr(int* num)
+{
+	*num=*num**num; //изменяем значение по адресу в указателе
 	
-* /\* 	returnx.x-21=-0o0o-[3~[3~
+	return *num;
+}
+*/
+int main()
+{
+  cout<<abs(-3)<<endl;
+  cout<<int(abs(char-3L))<<endl;
+  cout<<abs(-3.0)<<endl;
+  cout<<abs('0')<<endl;
+  cout<<abs(3,4)<<endl;
+  return 0;
+}
+
+int abs(int x)
+{
+ /*  cout<<"(function A)"; */
+/*   return x>0?x:-x; */
+/* } */
+/* double abs(double x) */
+/* { */
+  cout<<"(function B)";
+  return (1-2*(x<0))*x;
+}
+char abs(char x)
+{

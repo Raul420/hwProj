@@ -3,6 +3,7 @@
 
 int main()
 {	
+	enum operations op;
 	int i;
 	printf("Введите номер команды: \n\
 	0-найти min число;\n\
@@ -13,6 +14,7 @@ int main()
 	5-найти частное;\n\
 	6- завершить работу.\n");
 	scanf("%d", &i);
+	op = i;
 	while (i!=6)
 	{
 		if (!(i<=6)&&(i>0))
@@ -26,7 +28,7 @@ int main()
 		printf("Введите вторую переменную: \n");
 		scanf("%d", &b);
 		void (*operations[6])(int,int)={min, max, sum, sub, multi, quot};
-		operations[i](a, b);
+		operations[op](a, b);
 		printf("=======================================================\n");
 		printf("Введите номер команды: \n\
 		0-найти min число;\n\
